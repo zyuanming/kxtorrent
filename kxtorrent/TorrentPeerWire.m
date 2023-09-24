@@ -374,7 +374,7 @@ typedef enum {
     
     if (!_chokingPeer &&
         !_interestedInPeer &&
-        _requestBlocks.isEmpty) {
+        _requestBlocks.count == 0) {
         
         calm = _uploadMeter.timeout > TorrentSettings.peerCalmInterval;
     }
@@ -413,7 +413,7 @@ typedef enum {
 
 - (BOOL) bandwidthSendReady
 {
-    return (_uploadingBlocks.nonEmpty && (((TorrentBlock *)_uploadingBlocks.first).data != nil));
+    return (_uploadingBlocks.count > 0 && (((TorrentBlock *)_uploadingBlocks.first).data != nil));
 }
 
 - (void) bandwidthSendPerform
@@ -1375,7 +1375,7 @@ typedef enum {
 {
     if (tag == PEER_SOCKET_TAG_SEND_PIECE_DATA) {
         
-        if (_uploadingBlocks.nonEmpty) {
+        if (_uploadingBlocks.count > 0) {
             
             TorrentBlock *block = _uploadingBlocks.first;            
             [_uploadingBlocks removeObjectAtIndex:0];

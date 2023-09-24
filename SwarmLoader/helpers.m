@@ -158,7 +158,7 @@ NSString * torrentClientStateAsString2(TorrentClient *client)
 
 void copyResourcesToFolder(NSString *resType, NSString *srcFolder, NSString *destFolder)
 {
-    KxUtils.ensureDirectory(destFolder);
+    KxUtils.ensureDirectory(destFolder, nil);
     
     NSError *error;
     NSFileManager *fm = [[NSFileManager alloc] init];
@@ -166,14 +166,14 @@ void copyResourcesToFolder(NSString *resType, NSString *srcFolder, NSString *des
     
     if (error) {
         
-        DDLogCWarn(@"file error %@", error);
+        DDLogWarn(@"file error %@", error);
         return;
     }
     
     for (NSString *filename in contents) {
         
         if (filename.length &&
-            filename.first != '.' &&
+            ![filename hasPrefix:@"."] &&
             [filename.pathExtension isEqualToString:resType]) {
             
             NSString *from = [srcFolder stringByAppendingPathComponent:filename];
@@ -181,7 +181,7 @@ void copyResourcesToFolder(NSString *resType, NSString *srcFolder, NSString *des
             
             if (![fm copyItemAtPath:from toPath:to error:&error]) {
                 
-                DDLogCWarn(@"file error %@", error);
+                DDLogWarn(@"file error %@", error);
             }
         }
     }

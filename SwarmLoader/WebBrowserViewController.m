@@ -60,7 +60,7 @@ static int ddLogLevel = LOG_LEVEL_VERBOSE;
         
         // load boomarks from FS
         NSString *folder = [self.class bookmarksFolder];
-        KxUtils.ensureDirectory(folder);
+        KxUtils.ensureDirectory(folder, nil);
         
         NSFileManager *fm = [[NSFileManager alloc] init];
         NSArray *contents = [fm contentsOfDirectoryAtPath:folder error:nil];

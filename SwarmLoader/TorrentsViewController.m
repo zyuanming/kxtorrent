@@ -245,7 +245,7 @@ static NSString *pathForTorrent(TorrentMetaInfo *metaInfo)
     NSString *folder = [KxUtils.privateDataPath() stringByAppendingPathComponent:@"torrents"];
     
     NSError *error;
-    error = KxUtils.ensureDirectory(folder);
+    KxUtils.ensureDirectory(folder, nil);
     if (error) {
         
         [[[UIAlertView alloc] initWithTitle:@"File Error"

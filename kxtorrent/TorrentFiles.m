@@ -351,7 +351,6 @@ static NSString *mkPath(NSString *folder, TorrentMetaInfo *metaInfo, TorrentFile
 - (void) dealloc
 {    
     if (_needReleaseFileQueue) {
-        dispatch_release(_fileQueue);
         _fileQueue = nil;
     }
 }

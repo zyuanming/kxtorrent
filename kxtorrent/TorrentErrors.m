@@ -78,7 +78,7 @@ NSError * torrentError (torrentError_t error, NSString *format, ...)
         userInfo = @{ NSLocalizedDescriptionKey : torrentErrorStringForCode(error) };
     }
     
-    DDLogCVerbose(@"torrent error #%d %@", error, reason);
+    DDLogInfo(@"torrent error #%d %@", error, reason);
     
     return [NSError errorWithDomain:(NSString *)torrentErrorDomain
                                code:error
@@ -114,7 +114,7 @@ NSError * torrentErrorFromError (NSError *underlying, torrentError_t error, NSSt
         };
     }
     
-     DDLogCVerbose(@"torrent error #%d %@, underlying: %@",
+     DDLogInfo(@"torrent error #%d %@, underlying: %@",
                 error, reason, KxUtils.completeErrorMessage(underlying));
     
     return [NSError errorWithDomain:(NSString *)torrentErrorDomain

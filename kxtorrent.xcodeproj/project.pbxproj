@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2AA7BD8B2AC0A2A7001A677F /* KxConsole.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA7BD702AC0A2A7001A677F /* KxConsole.m */; };
+		2AA7BD8C2AC0A2A7001A677F /* NSData+ZLIB.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA7BD712AC0A2A7001A677F /* NSData+ZLIB.m */; };
+		2AA7BD8D2AC0A2A7001A677F /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA7BD722AC0A2A7001A677F /* NSString+HTML.m */; };
+		2AA7BD8E2AC0A2A7001A677F /* KxBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA7BD742AC0A2A7001A677F /* KxBase64.m */; };
+		2AA7BD8F2AC0A2A7001A677F /* NSString+Kolyvan.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA7BD762AC0A2A7001A677F /* NSString+Kolyvan.m */; };
+		2AA7BD902AC0A2A7001A677F /* NSDictionary+Kolyvan.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA7BD7B2AC0A2A7001A677F /* NSDictionary+Kolyvan.m */; };
+		2AA7BD912AC0A2A7001A677F /* KxCast.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA7BD7C2AC0A2A7001A677F /* KxCast.m */; };
+		2AA7BD922AC0A2A7001A677F /* KxUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA7BD802AC0A2A7001A677F /* KxUtils.m */; };
+		2AA7BD932AC0A2A7001A677F /* KxTuple2.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA7BD822AC0A2A7001A677F /* KxTuple2.m */; };
+		2AA7BD942AC0A2A7001A677F /* NSDate+Kolyvan.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA7BD832AC0A2A7001A677F /* NSDate+Kolyvan.m */; };
+		2AA7BD952AC0A2A7001A677F /* NSArray+Kolyvan.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA7BD852AC0A2A7001A677F /* NSArray+Kolyvan.m */; };
+		2AA7BD962AC0A2A7001A677F /* NSFileHandle+Kolyvan.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA7BD872AC0A2A7001A677F /* NSFileHandle+Kolyvan.m */; };
+		2AA7BD972AC0A2A7001A677F /* KxBitArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA7BD892AC0A2A7001A677F /* KxBitArray.m */; };
+		2AA7BD982AC0A2A7001A677F /* NSData+Kolyvan.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA7BD8A2AC0A2A7001A677F /* NSData+Kolyvan.m */; };
+		305A0B0D1DF332D4482601D8 /* Pods_SwarmLoaderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D925572DD636788335E29898 /* Pods_SwarmLoaderTests.framework */; };
+		6DAE2F2A54229B05D0A38BEF /* Pods_kxtorrentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F9E5E318883CE1520C61325 /* Pods_kxtorrentTests.framework */; };
 		870064991664AEEE006D4F3E /* checkmark_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 870064921664AEEE006D4F3E /* checkmark_small.png */; };
 		8700649A1664AEEE006D4F3E /* checkmark_small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 870064931664AEEE006D4F3E /* checkmark_small@2x.png */; };
 		870064AA1664E684006D4F3E /* TorrentSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 870064A91664E683006D4F3E /* TorrentSettings.m */; };
@@ -93,46 +109,7 @@
 		87EAD80716438AD0006048F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87FFE8DD1640E8BD00E18169 /* Foundation.framework */; };
 		87EAD80F16438AD0006048F8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 87EAD80D16438AD0006048F8 /* InfoPlist.strings */; };
 		87EAD81216438AD0006048F8 /* SwarmLoaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 87EAD81116438AD0006048F8 /* SwarmLoaderTests.m */; };
-		87EC528A1677146A00864C04 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 87EC52891677146A00864C04 /* GCDAsyncSocket.m */; };
-		87EC5295167714AC00864C04 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 87EC528E167714AC00864C04 /* DDAbstractDatabaseLogger.m */; };
-		87EC5296167714AC00864C04 /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 87EC5290167714AC00864C04 /* DDASLLogger.m */; };
-		87EC5297167714AC00864C04 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 87EC5292167714AC00864C04 /* DDLog.m */; };
-		87EC5298167714AC00864C04 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 87EC5294167714AC00864C04 /* DDTTYLogger.m */; };
-		87EC52B91677154100864C04 /* KxBitArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 87EC52A11677154100864C04 /* KxBitArray.m */; };
-		87EC52BA1677154100864C04 /* KxBitArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 87EC52A11677154100864C04 /* KxBitArray.m */; };
-		87EC52BB1677154100864C04 /* KxCast.m in Sources */ = {isa = PBXBuildFile; fileRef = 87EC52A31677154100864C04 /* KxCast.m */; };
-		87EC52BC1677154100864C04 /* KxCast.m in Sources */ = {isa = PBXBuildFile; fileRef = 87EC52A31677154100864C04 /* KxCast.m */; };
-		87EC52BD1677154100864C04 /* KxConsole.m in Sources */ = {isa = PBXBuildFile; fileRef = 87EC52A51677154100864C04 /* KxConsole.m */; };
-		87EC52BE1677154100864C04 /* KxConsole.m in Sources */ = {isa = PBXBuildFile; fileRef = 87EC52A51677154100864C04 /* KxConsole.m */; };
-		87EC52BF1677154100864C04 /* KxList.m in Sources */ = {isa = PBXBuildFile; fileRef = 87EC52A71677154100864C04 /* KxList.m */; };
-		87EC52C01677154100864C04 /* KxList.m in Sources */ = {isa = PBXBuildFile; fileRef = 87EC52A71677154100864C04 /* KxList.m */; };
-		87EC52C11677154100864C04 /* KxTuple2.m in Sources */ = {isa = PBXBuildFile; fileRef = 87EC52AA1677154100864C04 /* KxTuple2.m */; };
-		87EC52C21677154100864C04 /* KxTuple2.m in Sources */ = {isa = PBXBuildFile; fileRef = 87EC52AA1677154100864C04 /* KxTuple2.m */; };
-		87EC52C31677154100864C04 /* KxUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 87EC52AC1677154100864C04 /* KxUtils.m */; };
-		87EC52C41677154100864C04 /* KxUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 87EC52AC1677154100864C04 /* KxUtils.m */; };
-		87EC52C51677154100864C04 /* NSArray+Kolyvan.m in Sources */ = {isa = PBXBuildFile; fileRef = 87EC52AE1677154100864C04 /* NSArray+Kolyvan.m */; };
-		87EC52C61677154100864C04 /* NSArray+Kolyvan.m in Sources */ = {isa = PBXBuildFile; fileRef = 87EC52AE1677154100864C04 /* NSArray+Kolyvan.m */; };
-		87EC52C71677154100864C04 /* NSData+Kolyvan.m in Sources */ = {isa = PBXBuildFile; fileRef = 87EC52B01677154100864C04 /* NSData+Kolyvan.m */; };
-		87EC52C81677154100864C04 /* NSData+Kolyvan.m in Sources */ = {isa = PBXBuildFile; fileRef = 87EC52B01677154100864C04 /* NSData+Kolyvan.m */; };
-		87EC52C91677154100864C04 /* NSDate+Kolyvan.m in Sources */ = {isa = PBXBuildFile; fileRef = 87EC52B21677154100864C04 /* NSDate+Kolyvan.m */; };
-		87EC52CA1677154100864C04 /* NSDate+Kolyvan.m in Sources */ = {isa = PBXBuildFile; fileRef = 87EC52B21677154100864C04 /* NSDate+Kolyvan.m */; };
-		87EC52CB1677154100864C04 /* NSDictionary+Kolyvan.m in Sources */ = {isa = PBXBuildFile; fileRef = 87EC52B41677154100864C04 /* NSDictionary+Kolyvan.m */; };
-		87EC52CC1677154100864C04 /* NSDictionary+Kolyvan.m in Sources */ = {isa = PBXBuildFile; fileRef = 87EC52B41677154100864C04 /* NSDictionary+Kolyvan.m */; };
-		87EC52CD1677154100864C04 /* NSObject+Kolyvan.m in Sources */ = {isa = PBXBuildFile; fileRef = 87EC52B61677154100864C04 /* NSObject+Kolyvan.m */; };
-		87EC52CE1677154100864C04 /* NSObject+Kolyvan.m in Sources */ = {isa = PBXBuildFile; fileRef = 87EC52B61677154100864C04 /* NSObject+Kolyvan.m */; };
-		87EC52CF1677154100864C04 /* NSString+Kolyvan.m in Sources */ = {isa = PBXBuildFile; fileRef = 87EC52B81677154100864C04 /* NSString+Kolyvan.m */; };
-		87EC52D01677154100864C04 /* NSString+Kolyvan.m in Sources */ = {isa = PBXBuildFile; fileRef = 87EC52B81677154100864C04 /* NSString+Kolyvan.m */; };
-		87EC52D51677157F00864C04 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 87EC52D21677157F00864C04 /* SVProgressHUD.bundle */; };
-		87EC52D71677157F00864C04 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 87EC52D41677157F00864C04 /* SVProgressHUD.m */; };
-		87EC52E7167715EC00864C04 /* libkxmovie.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 87EC52E4167715B600864C04 /* libkxmovie.a */; };
-		87EC52EC1677191C00864C04 /* kxmovie.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 87EC52E91677191C00864C04 /* kxmovie.bundle */; };
 		87EC52ED1677196D00864C04 /* libkxtorrent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8780438916413D4100B2D162 /* libkxtorrent.a */; };
-		87EC52EF16771CB500864C04 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 87EC5292167714AC00864C04 /* DDLog.m */; };
-		87EC52F016771CBA00864C04 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 87EC5294167714AC00864C04 /* DDTTYLogger.m */; };
-		87EC52F116771CBC00864C04 /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 87EC5290167714AC00864C04 /* DDASLLogger.m */; };
-		87EC52F216771CBE00864C04 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 87EC528E167714AC00864C04 /* DDAbstractDatabaseLogger.m */; };
-		87EC52F316771CE500864C04 /* NSArray+Kolyvan.m in Sources */ = {isa = PBXBuildFile; fileRef = 87EC52AE1677154100864C04 /* NSArray+Kolyvan.m */; };
-		87EC52F416771CF600864C04 /* NSData+Kolyvan.m in Sources */ = {isa = PBXBuildFile; fileRef = 87EC52B01677154100864C04 /* NSData+Kolyvan.m */; };
 		87EC720A166F080300CB7F10 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 87EC7208166F080300CB7F10 /* Icon.png */; };
 		87EC720B166F080300CB7F10 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 87EC7209166F080300CB7F10 /* Icon@2x.png */; };
 		87EC7210166F084400CB7F10 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 87EAD7F316438AD0006048F8 /* Default.png */; };
@@ -161,6 +138,8 @@
 		87F818E7165CDB5800579656 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87F818E5165CDB4E00579656 /* MediaPlayer.framework */; };
 		87FDD02716635B260010DB2A /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 87FDD02216635B260010DB2A /* home.png */; };
 		87FDD02816635B260010DB2A /* home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 87FDD02316635B260010DB2A /* home@2x.png */; };
+		90A05FEB7750E60910A51F34 /* Pods_kxtorrent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7EA2DA1F00E15320234AEB /* Pods_kxtorrent.framework */; };
+		CAC47048B6232C2F8A34D29B /* Pods_SwarmLoader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC982966A38AC7CD43E88705 /* Pods_SwarmLoader.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -177,27 +156,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 87EAD7E016438AD0006048F8;
 			remoteInfo = SwarmLoader;
-		};
-		87EC52E1167715B600864C04 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 87EC52D8167715B600864C04 /* kxmovie.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 87E793F816390F6D000A0848;
-			remoteInfo = KxMovieExample;
-		};
-		87EC52E3167715B600864C04 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 87EC52D8167715B600864C04 /* kxmovie.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 87FD6175163A75440090956E;
-			remoteInfo = kxmovie;
-		};
-		87EC52E5167715DB00864C04 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 87EC52D8167715B600864C04 /* kxmovie.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 87FD6174163A75440090956E;
-			remoteInfo = kxmovie;
 		};
 		87F7CA241643935F00FA9B30 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -225,6 +183,42 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2AA7BD6F2AC0A2A7001A677F /* KxBitArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KxBitArray.h; path = submodules/kxtools/kxtools/KxBitArray.h; sourceTree = "<group>"; };
+		2AA7BD702AC0A2A7001A677F /* KxConsole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KxConsole.m; path = submodules/kxtools/kxtools/KxConsole.m; sourceTree = "<group>"; };
+		2AA7BD712AC0A2A7001A677F /* NSData+ZLIB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+ZLIB.m"; path = "submodules/kxtools/kxtools/NSData+ZLIB.m"; sourceTree = "<group>"; };
+		2AA7BD722AC0A2A7001A677F /* NSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+HTML.m"; path = "submodules/kxtools/kxtools/NSString+HTML.m"; sourceTree = "<group>"; };
+		2AA7BD732AC0A2A7001A677F /* NSData+Kolyvan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+Kolyvan.h"; path = "submodules/kxtools/kxtools/NSData+Kolyvan.h"; sourceTree = "<group>"; };
+		2AA7BD742AC0A2A7001A677F /* KxBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KxBase64.m; path = submodules/kxtools/kxtools/KxBase64.m; sourceTree = "<group>"; };
+		2AA7BD752AC0A2A7001A677F /* NSData+ZLIB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+ZLIB.h"; path = "submodules/kxtools/kxtools/NSData+ZLIB.h"; sourceTree = "<group>"; };
+		2AA7BD762AC0A2A7001A677F /* NSString+Kolyvan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Kolyvan.m"; path = "submodules/kxtools/kxtools/NSString+Kolyvan.m"; sourceTree = "<group>"; };
+		2AA7BD772AC0A2A7001A677F /* NSFileHandle+Kolyvan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSFileHandle+Kolyvan.h"; path = "submodules/kxtools/kxtools/NSFileHandle+Kolyvan.h"; sourceTree = "<group>"; };
+		2AA7BD782AC0A2A7001A677F /* KxTuple2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KxTuple2.h; path = submodules/kxtools/kxtools/KxTuple2.h; sourceTree = "<group>"; };
+		2AA7BD792AC0A2A7001A677F /* KxCast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KxCast.h; path = submodules/kxtools/kxtools/KxCast.h; sourceTree = "<group>"; };
+		2AA7BD7A2AC0A2A7001A677F /* NSDictionary+Kolyvan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+Kolyvan.h"; path = "submodules/kxtools/kxtools/NSDictionary+Kolyvan.h"; sourceTree = "<group>"; };
+		2AA7BD7B2AC0A2A7001A677F /* NSDictionary+Kolyvan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+Kolyvan.m"; path = "submodules/kxtools/kxtools/NSDictionary+Kolyvan.m"; sourceTree = "<group>"; };
+		2AA7BD7C2AC0A2A7001A677F /* KxCast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KxCast.m; path = submodules/kxtools/kxtools/KxCast.m; sourceTree = "<group>"; };
+		2AA7BD7D2AC0A2A7001A677F /* NSDate+Kolyvan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+Kolyvan.h"; path = "submodules/kxtools/kxtools/NSDate+Kolyvan.h"; sourceTree = "<group>"; };
+		2AA7BD7E2AC0A2A7001A677F /* KxBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KxBase64.h; path = submodules/kxtools/kxtools/KxBase64.h; sourceTree = "<group>"; };
+		2AA7BD7F2AC0A2A7001A677F /* KxUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KxUtils.h; path = submodules/kxtools/kxtools/KxUtils.h; sourceTree = "<group>"; };
+		2AA7BD802AC0A2A7001A677F /* KxUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KxUtils.m; path = submodules/kxtools/kxtools/KxUtils.m; sourceTree = "<group>"; };
+		2AA7BD812AC0A2A7001A677F /* NSString+Kolyvan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Kolyvan.h"; path = "submodules/kxtools/kxtools/NSString+Kolyvan.h"; sourceTree = "<group>"; };
+		2AA7BD822AC0A2A7001A677F /* KxTuple2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KxTuple2.m; path = submodules/kxtools/kxtools/KxTuple2.m; sourceTree = "<group>"; };
+		2AA7BD832AC0A2A7001A677F /* NSDate+Kolyvan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+Kolyvan.m"; path = "submodules/kxtools/kxtools/NSDate+Kolyvan.m"; sourceTree = "<group>"; };
+		2AA7BD842AC0A2A7001A677F /* KxConsole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KxConsole.h; path = submodules/kxtools/kxtools/KxConsole.h; sourceTree = "<group>"; };
+		2AA7BD852AC0A2A7001A677F /* NSArray+Kolyvan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Kolyvan.m"; path = "submodules/kxtools/kxtools/NSArray+Kolyvan.m"; sourceTree = "<group>"; };
+		2AA7BD862AC0A2A7001A677F /* NSArray+Kolyvan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+Kolyvan.h"; path = "submodules/kxtools/kxtools/NSArray+Kolyvan.h"; sourceTree = "<group>"; };
+		2AA7BD872AC0A2A7001A677F /* NSFileHandle+Kolyvan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSFileHandle+Kolyvan.m"; path = "submodules/kxtools/kxtools/NSFileHandle+Kolyvan.m"; sourceTree = "<group>"; };
+		2AA7BD882AC0A2A7001A677F /* NSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+HTML.h"; path = "submodules/kxtools/kxtools/NSString+HTML.h"; sourceTree = "<group>"; };
+		2AA7BD892AC0A2A7001A677F /* KxBitArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KxBitArray.m; path = submodules/kxtools/kxtools/KxBitArray.m; sourceTree = "<group>"; };
+		2AA7BD8A2AC0A2A7001A677F /* NSData+Kolyvan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+Kolyvan.m"; path = "submodules/kxtools/kxtools/NSData+Kolyvan.m"; sourceTree = "<group>"; };
+		3AD35EAC53A3115C226793C0 /* Pods-SwarmLoader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwarmLoader.debug.xcconfig"; path = "Target Support Files/Pods-SwarmLoader/Pods-SwarmLoader.debug.xcconfig"; sourceTree = "<group>"; };
+		3C7A050DE3604A0C62FAC804 /* Pods-kxtorrent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kxtorrent.release.xcconfig"; path = "Target Support Files/Pods-kxtorrent/Pods-kxtorrent.release.xcconfig"; sourceTree = "<group>"; };
+		3E06C2732D42A17D47923670 /* Pods-SwarmLoaderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwarmLoaderTests.debug.xcconfig"; path = "Target Support Files/Pods-SwarmLoaderTests/Pods-SwarmLoaderTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3F07D44355ECCF1A1CEE8BD1 /* Pods-SwarmLoaderTests.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwarmLoaderTests.adhoc.xcconfig"; path = "Target Support Files/Pods-SwarmLoaderTests/Pods-SwarmLoaderTests.adhoc.xcconfig"; sourceTree = "<group>"; };
+		41058D4504F6B142C1A2D9B9 /* Pods-SwarmLoader.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwarmLoader.adhoc.xcconfig"; path = "Target Support Files/Pods-SwarmLoader/Pods-SwarmLoader.adhoc.xcconfig"; sourceTree = "<group>"; };
+		50959863F61FBECD6A79FD09 /* Pods-kxtorrentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kxtorrentTests.release.xcconfig"; path = "Target Support Files/Pods-kxtorrentTests/Pods-kxtorrentTests.release.xcconfig"; sourceTree = "<group>"; };
+		5AC9039115DFE7798DA4E998 /* Pods-SwarmLoaderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwarmLoaderTests.release.xcconfig"; path = "Target Support Files/Pods-SwarmLoaderTests/Pods-SwarmLoaderTests.release.xcconfig"; sourceTree = "<group>"; };
+		80493A47E7D5DCEA8F26F96B /* Pods-kxtorrent.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kxtorrent.adhoc.xcconfig"; path = "Target Support Files/Pods-kxtorrent/Pods-kxtorrent.adhoc.xcconfig"; sourceTree = "<group>"; };
 		870064921664AEEE006D4F3E /* checkmark_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = checkmark_small.png; path = resources/images/checkmark_small.png; sourceTree = SOURCE_ROOT; };
 		870064931664AEEE006D4F3E /* checkmark_small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "checkmark_small@2x.png"; path = "resources/images/checkmark_small@2x.png"; sourceTree = SOURCE_ROOT; };
 		870064A81664E683006D4F3E /* TorrentSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TorrentSettings.h; sourceTree = "<group>"; };
@@ -275,6 +269,7 @@
 		875C0A83164B80BA005543CC /* TorrentDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TorrentDetailViewController.m; sourceTree = "<group>"; };
 		875C0A85164B8166005543CC /* helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = helpers.h; sourceTree = "<group>"; };
 		875C0A86164B8166005543CC /* helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = helpers.m; sourceTree = "<group>"; };
+		876CF045E80308D1F2CB04B1 /* Pods-SwarmLoader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwarmLoader.release.xcconfig"; path = "Target Support Files/Pods-SwarmLoader/Pods-SwarmLoader.release.xcconfig"; sourceTree = "<group>"; };
 		8780438916413D4100B2D162 /* libkxtorrent.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libkxtorrent.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8780438D16413D4100B2D162 /* kxtorrent-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "kxtorrent-Prefix.pch"; sourceTree = "<group>"; };
 		8780439716413D4100B2D162 /* kxtorrentTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kxtorrentTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -339,48 +334,6 @@
 		87EAD81116438AD0006048F8 /* SwarmLoaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwarmLoaderTests.m; sourceTree = "<group>"; };
 		87EAD82F16439176006048F8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		87EAD83216439197006048F8 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
-		87EC52881677146A00864C04 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCDAsyncSocket.h; path = submodules/CocoaAsyncSocket/GCD/GCDAsyncSocket.h; sourceTree = "<group>"; };
-		87EC52891677146A00864C04 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncSocket.m; path = submodules/CocoaAsyncSocket/GCD/GCDAsyncSocket.m; sourceTree = "<group>"; };
-		87EC528D167714AC00864C04 /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDAbstractDatabaseLogger.h; path = submodules/CocoaLumberjack/Lumberjack/DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
-		87EC528E167714AC00864C04 /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDAbstractDatabaseLogger.m; path = submodules/CocoaLumberjack/Lumberjack/DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
-		87EC528F167714AC00864C04 /* DDASLLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDASLLogger.h; path = submodules/CocoaLumberjack/Lumberjack/DDASLLogger.h; sourceTree = "<group>"; };
-		87EC5290167714AC00864C04 /* DDASLLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDASLLogger.m; path = submodules/CocoaLumberjack/Lumberjack/DDASLLogger.m; sourceTree = "<group>"; };
-		87EC5291167714AC00864C04 /* DDLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDLog.h; path = submodules/CocoaLumberjack/Lumberjack/DDLog.h; sourceTree = "<group>"; };
-		87EC5292167714AC00864C04 /* DDLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDLog.m; path = submodules/CocoaLumberjack/Lumberjack/DDLog.m; sourceTree = "<group>"; };
-		87EC5293167714AC00864C04 /* DDTTYLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDTTYLogger.h; path = submodules/CocoaLumberjack/Lumberjack/DDTTYLogger.h; sourceTree = "<group>"; };
-		87EC5294167714AC00864C04 /* DDTTYLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDTTYLogger.m; path = submodules/CocoaLumberjack/Lumberjack/DDTTYLogger.m; sourceTree = "<group>"; };
-		87EC529F1677154100864C04 /* KxArc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KxArc.h; path = submodules/kxtools/kxtools/KxArc.h; sourceTree = "<group>"; };
-		87EC52A01677154100864C04 /* KxBitArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KxBitArray.h; path = submodules/kxtools/kxtools/KxBitArray.h; sourceTree = "<group>"; };
-		87EC52A11677154100864C04 /* KxBitArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KxBitArray.m; path = submodules/kxtools/kxtools/KxBitArray.m; sourceTree = "<group>"; };
-		87EC52A21677154100864C04 /* KxCast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KxCast.h; path = submodules/kxtools/kxtools/KxCast.h; sourceTree = "<group>"; };
-		87EC52A31677154100864C04 /* KxCast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KxCast.m; path = submodules/kxtools/kxtools/KxCast.m; sourceTree = "<group>"; };
-		87EC52A41677154100864C04 /* KxConsole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KxConsole.h; path = submodules/kxtools/kxtools/KxConsole.h; sourceTree = "<group>"; };
-		87EC52A51677154100864C04 /* KxConsole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KxConsole.m; path = submodules/kxtools/kxtools/KxConsole.m; sourceTree = "<group>"; };
-		87EC52A61677154100864C04 /* KxList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KxList.h; path = submodules/kxtools/kxtools/KxList.h; sourceTree = "<group>"; };
-		87EC52A71677154100864C04 /* KxList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KxList.m; path = submodules/kxtools/kxtools/KxList.m; sourceTree = "<group>"; };
-		87EC52A81677154100864C04 /* KxMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KxMacros.h; path = submodules/kxtools/kxtools/KxMacros.h; sourceTree = "<group>"; };
-		87EC52A91677154100864C04 /* KxTuple2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KxTuple2.h; path = submodules/kxtools/kxtools/KxTuple2.h; sourceTree = "<group>"; };
-		87EC52AA1677154100864C04 /* KxTuple2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KxTuple2.m; path = submodules/kxtools/kxtools/KxTuple2.m; sourceTree = "<group>"; };
-		87EC52AB1677154100864C04 /* KxUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KxUtils.h; path = submodules/kxtools/kxtools/KxUtils.h; sourceTree = "<group>"; };
-		87EC52AC1677154100864C04 /* KxUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KxUtils.m; path = submodules/kxtools/kxtools/KxUtils.m; sourceTree = "<group>"; };
-		87EC52AD1677154100864C04 /* NSArray+Kolyvan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+Kolyvan.h"; path = "submodules/kxtools/kxtools/NSArray+Kolyvan.h"; sourceTree = "<group>"; };
-		87EC52AE1677154100864C04 /* NSArray+Kolyvan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Kolyvan.m"; path = "submodules/kxtools/kxtools/NSArray+Kolyvan.m"; sourceTree = "<group>"; };
-		87EC52AF1677154100864C04 /* NSData+Kolyvan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+Kolyvan.h"; path = "submodules/kxtools/kxtools/NSData+Kolyvan.h"; sourceTree = "<group>"; };
-		87EC52B01677154100864C04 /* NSData+Kolyvan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+Kolyvan.m"; path = "submodules/kxtools/kxtools/NSData+Kolyvan.m"; sourceTree = "<group>"; };
-		87EC52B11677154100864C04 /* NSDate+Kolyvan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+Kolyvan.h"; path = "submodules/kxtools/kxtools/NSDate+Kolyvan.h"; sourceTree = "<group>"; };
-		87EC52B21677154100864C04 /* NSDate+Kolyvan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+Kolyvan.m"; path = "submodules/kxtools/kxtools/NSDate+Kolyvan.m"; sourceTree = "<group>"; };
-		87EC52B31677154100864C04 /* NSDictionary+Kolyvan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+Kolyvan.h"; path = "submodules/kxtools/kxtools/NSDictionary+Kolyvan.h"; sourceTree = "<group>"; };
-		87EC52B41677154100864C04 /* NSDictionary+Kolyvan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+Kolyvan.m"; path = "submodules/kxtools/kxtools/NSDictionary+Kolyvan.m"; sourceTree = "<group>"; };
-		87EC52B51677154100864C04 /* NSObject+Kolyvan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+Kolyvan.h"; path = "submodules/kxtools/kxtools/NSObject+Kolyvan.h"; sourceTree = "<group>"; };
-		87EC52B61677154100864C04 /* NSObject+Kolyvan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+Kolyvan.m"; path = "submodules/kxtools/kxtools/NSObject+Kolyvan.m"; sourceTree = "<group>"; };
-		87EC52B71677154100864C04 /* NSString+Kolyvan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Kolyvan.h"; path = "submodules/kxtools/kxtools/NSString+Kolyvan.h"; sourceTree = "<group>"; };
-		87EC52B81677154100864C04 /* NSString+Kolyvan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Kolyvan.m"; path = "submodules/kxtools/kxtools/NSString+Kolyvan.m"; sourceTree = "<group>"; };
-		87EC52D21677157F00864C04 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
-		87EC52D31677157F00864C04 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
-		87EC52D41677157F00864C04 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
-		87EC52D8167715B600864C04 /* kxmovie.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = kxmovie.xcodeproj; path = submodules/kxmovie/kxmovie.xcodeproj; sourceTree = "<group>"; };
-		87EC52E91677191C00864C04 /* kxmovie.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = kxmovie.bundle; path = submodules/kxmovie/kxmovie/kxmovie.bundle; sourceTree = "<group>"; };
-		87EC52EB1677191C00864C04 /* KxMovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KxMovieViewController.h; path = submodules/kxmovie/kxmovie/KxMovieViewController.h; sourceTree = "<group>"; };
 		87EC7208166F080300CB7F10 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		87EC7209166F080300CB7F10 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		87EC721E166F161B00CB7F10 /* TextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewController.h; sourceTree = "<group>"; };
@@ -417,6 +370,13 @@
 		87FFE8EC1640E8BD00E18169 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		87FFE8EE1640E8BD00E18169 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		87FFE93F1640F98400E18169 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/usr/lib/libz.dylib; sourceTree = DEVELOPER_DIR; };
+		8F9E5E318883CE1520C61325 /* Pods_kxtorrentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kxtorrentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0BB1B9DCC1712215A3601D9 /* Pods-kxtorrent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kxtorrent.debug.xcconfig"; path = "Target Support Files/Pods-kxtorrent/Pods-kxtorrent.debug.xcconfig"; sourceTree = "<group>"; };
+		C43B17BFE4AF181E53E1E811 /* Pods-kxtorrentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kxtorrentTests.debug.xcconfig"; path = "Target Support Files/Pods-kxtorrentTests/Pods-kxtorrentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CC982966A38AC7CD43E88705 /* Pods_SwarmLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwarmLoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE7EA2DA1F00E15320234AEB /* Pods_kxtorrent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kxtorrent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D925572DD636788335E29898 /* Pods_SwarmLoaderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwarmLoaderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCF71B9118C4114B62DA95E5 /* Pods-kxtorrentTests.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kxtorrentTests.adhoc.xcconfig"; path = "Target Support Files/Pods-kxtorrentTests/Pods-kxtorrentTests.adhoc.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -425,6 +385,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8780438A16413D4100B2D162 /* Foundation.framework in Frameworks */,
+				90A05FEB7750E60910A51F34 /* Pods_kxtorrent.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +398,7 @@
 				8780439916413D4100B2D162 /* UIKit.framework in Frameworks */,
 				8780439A16413D4100B2D162 /* Foundation.framework in Frameworks */,
 				8780439D16413D4100B2D162 /* libkxtorrent.a in Frameworks */,
+				6DAE2F2A54229B05D0A38BEF /* Pods_kxtorrentTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,7 +406,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87EC52E7167715EC00864C04 /* libkxmovie.a in Frameworks */,
 				87EC52ED1677196D00864C04 /* libkxtorrent.a in Frameworks */,
 				87F7CA311643940600FA9B30 /* libz.dylib in Frameworks */,
 				87EAD7E616438AD0006048F8 /* CoreGraphics.framework in Frameworks */,
@@ -459,6 +420,7 @@
 				870E2BE116686F7800424846 /* Accelerate.framework in Frameworks */,
 				870E2BE216686F7800424846 /* AudioToolbox.framework in Frameworks */,
 				870E2BE316686F7800424846 /* CoreAudio.framework in Frameworks */,
+				CAC47048B6232C2F8A34D29B /* Pods_SwarmLoader.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,12 +432,32 @@
 				87EAD80616438AD0006048F8 /* UIKit.framework in Frameworks */,
 				87EAD80716438AD0006048F8 /* Foundation.framework in Frameworks */,
 				87F509701647785B001B2A75 /* libkxtorrent.a in Frameworks */,
+				305A0B0D1DF332D4482601D8 /* Pods_SwarmLoaderTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6ED47BF40BFF520E73CF44B3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3AD35EAC53A3115C226793C0 /* Pods-SwarmLoader.debug.xcconfig */,
+				876CF045E80308D1F2CB04B1 /* Pods-SwarmLoader.release.xcconfig */,
+				41058D4504F6B142C1A2D9B9 /* Pods-SwarmLoader.adhoc.xcconfig */,
+				3E06C2732D42A17D47923670 /* Pods-SwarmLoaderTests.debug.xcconfig */,
+				5AC9039115DFE7798DA4E998 /* Pods-SwarmLoaderTests.release.xcconfig */,
+				3F07D44355ECCF1A1CEE8BD1 /* Pods-SwarmLoaderTests.adhoc.xcconfig */,
+				A0BB1B9DCC1712215A3601D9 /* Pods-kxtorrent.debug.xcconfig */,
+				3C7A050DE3604A0C62FAC804 /* Pods-kxtorrent.release.xcconfig */,
+				80493A47E7D5DCEA8F26F96B /* Pods-kxtorrent.adhoc.xcconfig */,
+				C43B17BFE4AF181E53E1E811 /* Pods-kxtorrentTests.debug.xcconfig */,
+				50959863F61FBECD6A79FD09 /* Pods-kxtorrentTests.release.xcconfig */,
+				DCF71B9118C4114B62DA95E5 /* Pods-kxtorrentTests.adhoc.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8704C11C1652378800042578 /* category */ = {
 			isa = PBXGroup;
 			children = (
@@ -645,99 +627,44 @@
 		87EC527B1677114F00864C04 /* submodules */ = {
 			isa = PBXGroup;
 			children = (
-				87EC52E81677190500864C04 /* kxmovie */,
-				87EC52D11677157F00864C04 /* SVProgressHUD */,
 				87EC529E1677152D00864C04 /* kxtools */,
-				87EC528C1677149700864C04 /* CocoaLumberjack */,
-				87EC52871677145C00864C04 /* CocoaAsyncSocket */,
 			);
 			name = submodules;
-			sourceTree = "<group>";
-		};
-		87EC52871677145C00864C04 /* CocoaAsyncSocket */ = {
-			isa = PBXGroup;
-			children = (
-				87EC52881677146A00864C04 /* GCDAsyncSocket.h */,
-				87EC52891677146A00864C04 /* GCDAsyncSocket.m */,
-			);
-			name = CocoaAsyncSocket;
-			sourceTree = "<group>";
-		};
-		87EC528C1677149700864C04 /* CocoaLumberjack */ = {
-			isa = PBXGroup;
-			children = (
-				87EC528D167714AC00864C04 /* DDAbstractDatabaseLogger.h */,
-				87EC528E167714AC00864C04 /* DDAbstractDatabaseLogger.m */,
-				87EC528F167714AC00864C04 /* DDASLLogger.h */,
-				87EC5290167714AC00864C04 /* DDASLLogger.m */,
-				87EC5291167714AC00864C04 /* DDLog.h */,
-				87EC5292167714AC00864C04 /* DDLog.m */,
-				87EC5293167714AC00864C04 /* DDTTYLogger.h */,
-				87EC5294167714AC00864C04 /* DDTTYLogger.m */,
-			);
-			name = CocoaLumberjack;
 			sourceTree = "<group>";
 		};
 		87EC529E1677152D00864C04 /* kxtools */ = {
 			isa = PBXGroup;
 			children = (
-				87EC529F1677154100864C04 /* KxArc.h */,
-				87EC52A01677154100864C04 /* KxBitArray.h */,
-				87EC52A11677154100864C04 /* KxBitArray.m */,
-				87EC52A21677154100864C04 /* KxCast.h */,
-				87EC52A31677154100864C04 /* KxCast.m */,
-				87EC52A41677154100864C04 /* KxConsole.h */,
-				87EC52A51677154100864C04 /* KxConsole.m */,
-				87EC52A61677154100864C04 /* KxList.h */,
-				87EC52A71677154100864C04 /* KxList.m */,
-				87EC52A81677154100864C04 /* KxMacros.h */,
-				87EC52A91677154100864C04 /* KxTuple2.h */,
-				87EC52AA1677154100864C04 /* KxTuple2.m */,
-				87EC52AB1677154100864C04 /* KxUtils.h */,
-				87EC52AC1677154100864C04 /* KxUtils.m */,
-				87EC52AD1677154100864C04 /* NSArray+Kolyvan.h */,
-				87EC52AE1677154100864C04 /* NSArray+Kolyvan.m */,
-				87EC52AF1677154100864C04 /* NSData+Kolyvan.h */,
-				87EC52B01677154100864C04 /* NSData+Kolyvan.m */,
-				87EC52B11677154100864C04 /* NSDate+Kolyvan.h */,
-				87EC52B21677154100864C04 /* NSDate+Kolyvan.m */,
-				87EC52B31677154100864C04 /* NSDictionary+Kolyvan.h */,
-				87EC52B41677154100864C04 /* NSDictionary+Kolyvan.m */,
-				87EC52B51677154100864C04 /* NSObject+Kolyvan.h */,
-				87EC52B61677154100864C04 /* NSObject+Kolyvan.m */,
-				87EC52B71677154100864C04 /* NSString+Kolyvan.h */,
-				87EC52B81677154100864C04 /* NSString+Kolyvan.m */,
+				2AA7BD7E2AC0A2A7001A677F /* KxBase64.h */,
+				2AA7BD742AC0A2A7001A677F /* KxBase64.m */,
+				2AA7BD6F2AC0A2A7001A677F /* KxBitArray.h */,
+				2AA7BD892AC0A2A7001A677F /* KxBitArray.m */,
+				2AA7BD792AC0A2A7001A677F /* KxCast.h */,
+				2AA7BD7C2AC0A2A7001A677F /* KxCast.m */,
+				2AA7BD842AC0A2A7001A677F /* KxConsole.h */,
+				2AA7BD702AC0A2A7001A677F /* KxConsole.m */,
+				2AA7BD782AC0A2A7001A677F /* KxTuple2.h */,
+				2AA7BD822AC0A2A7001A677F /* KxTuple2.m */,
+				2AA7BD7F2AC0A2A7001A677F /* KxUtils.h */,
+				2AA7BD802AC0A2A7001A677F /* KxUtils.m */,
+				2AA7BD862AC0A2A7001A677F /* NSArray+Kolyvan.h */,
+				2AA7BD852AC0A2A7001A677F /* NSArray+Kolyvan.m */,
+				2AA7BD732AC0A2A7001A677F /* NSData+Kolyvan.h */,
+				2AA7BD8A2AC0A2A7001A677F /* NSData+Kolyvan.m */,
+				2AA7BD752AC0A2A7001A677F /* NSData+ZLIB.h */,
+				2AA7BD712AC0A2A7001A677F /* NSData+ZLIB.m */,
+				2AA7BD7D2AC0A2A7001A677F /* NSDate+Kolyvan.h */,
+				2AA7BD832AC0A2A7001A677F /* NSDate+Kolyvan.m */,
+				2AA7BD7A2AC0A2A7001A677F /* NSDictionary+Kolyvan.h */,
+				2AA7BD7B2AC0A2A7001A677F /* NSDictionary+Kolyvan.m */,
+				2AA7BD772AC0A2A7001A677F /* NSFileHandle+Kolyvan.h */,
+				2AA7BD872AC0A2A7001A677F /* NSFileHandle+Kolyvan.m */,
+				2AA7BD882AC0A2A7001A677F /* NSString+HTML.h */,
+				2AA7BD722AC0A2A7001A677F /* NSString+HTML.m */,
+				2AA7BD812AC0A2A7001A677F /* NSString+Kolyvan.h */,
+				2AA7BD762AC0A2A7001A677F /* NSString+Kolyvan.m */,
 			);
 			name = kxtools;
-			sourceTree = "<group>";
-		};
-		87EC52D11677157F00864C04 /* SVProgressHUD */ = {
-			isa = PBXGroup;
-			children = (
-				87EC52D21677157F00864C04 /* SVProgressHUD.bundle */,
-				87EC52D31677157F00864C04 /* SVProgressHUD.h */,
-				87EC52D41677157F00864C04 /* SVProgressHUD.m */,
-			);
-			name = SVProgressHUD;
-			path = submodules/SVProgressHUD/SVProgressHUD;
-			sourceTree = "<group>";
-		};
-		87EC52D9167715B600864C04 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				87EC52E2167715B600864C04 /* KxMovieExample.app */,
-				87EC52E4167715B600864C04 /* libkxmovie.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		87EC52E81677190500864C04 /* kxmovie */ = {
-			isa = PBXGroup;
-			children = (
-				87EC52E91677191C00864C04 /* kxmovie.bundle */,
-				87EC52EB1677191C00864C04 /* KxMovieViewController.h */,
-			);
-			name = kxmovie;
 			sourceTree = "<group>";
 		};
 		87F7CA271643938800FA9B30 /* resources */ = {
@@ -784,7 +711,6 @@
 		87FFE8CD1640E88F00E18169 = {
 			isa = PBXGroup;
 			children = (
-				87EC52D8167715B600864C04 /* kxmovie.xcodeproj */,
 				87EC527B1677114F00864C04 /* submodules */,
 				8780438B16413D4100B2D162 /* kxtorrent */,
 				8780439E16413D4100B2D162 /* kxtorrentTests */,
@@ -793,6 +719,7 @@
 				87EAD80A16438AD0006048F8 /* SwarmLoaderTests */,
 				87FFE8DC1640E8BD00E18169 /* Frameworks */,
 				87FFE8DB1640E8BD00E18169 /* Products */,
+				6ED47BF40BFF520E73CF44B3 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -824,6 +751,10 @@
 				87FFE8EE1640E8BD00E18169 /* UIKit.framework */,
 				87EAD7E516438AD0006048F8 /* CoreGraphics.framework */,
 				87EAD82F16439176006048F8 /* Security.framework */,
+				CC982966A38AC7CD43E88705 /* Pods_SwarmLoader.framework */,
+				D925572DD636788335E29898 /* Pods_SwarmLoaderTests.framework */,
+				CE7EA2DA1F00E15320234AEB /* Pods_kxtorrent.framework */,
+				8F9E5E318883CE1520C61325 /* Pods_kxtorrentTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -835,6 +766,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 878043A716413D4100B2D162 /* Build configuration list for PBXNativeTarget "kxtorrent" */;
 			buildPhases = (
+				F42F00871DB36A8B23B04590 /* [CP] Check Pods Manifest.lock */,
 				8780438516413D4100B2D162 /* Sources */,
 				8780438616413D4100B2D162 /* Frameworks */,
 				8780438716413D4100B2D162 /* CopyFiles */,
@@ -852,6 +784,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 878043AA16413D4100B2D162 /* Build configuration list for PBXNativeTarget "kxtorrentTests" */;
 			buildPhases = (
+				FDCE2103EA6585582E85DB34 /* [CP] Check Pods Manifest.lock */,
 				8780439216413D4100B2D162 /* Sources */,
 				8780439316413D4100B2D162 /* Frameworks */,
 				8780439416413D4100B2D162 /* Resources */,
@@ -871,14 +804,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 87EAD81316438AD0006048F8 /* Build configuration list for PBXNativeTarget "SwarmLoader" */;
 			buildPhases = (
+				B23BC8C2E1AB7B3446F55F33 /* [CP] Check Pods Manifest.lock */,
 				87EAD7DD16438AD0006048F8 /* Sources */,
 				87EAD7DE16438AD0006048F8 /* Frameworks */,
 				87EAD7DF16438AD0006048F8 /* Resources */,
+				2EA2349AC52A58A5BA8F5F7A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				87EC52E6167715DB00864C04 /* PBXTargetDependency */,
 				87F7CA251643935F00FA9B30 /* PBXTargetDependency */,
 			);
 			name = SwarmLoader;
@@ -890,6 +824,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 87EAD81616438AD0006048F8 /* Build configuration list for PBXNativeTarget "SwarmLoaderTests" */;
 			buildPhases = (
+				A85A495B3D7546DDAD57264B /* [CP] Check Pods Manifest.lock */,
 				87EAD7FF16438AD0006048F8 /* Sources */,
 				87EAD80016438AD0006048F8 /* Frameworks */,
 				87EAD80116438AD0006048F8 /* Resources */,
@@ -912,23 +847,24 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0450;
+				TargetAttributes = {
+					87EAD7E016438AD0006048F8 = {
+						DevelopmentTeam = 8WGT7VBHM9;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = 87FFE8D21640E88F00E18169 /* Build configuration list for PBXProject "kxtorrent" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 87FFE8CD1640E88F00E18169;
 			productRefGroup = 87FFE8DB1640E8BD00E18169 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 87EC52D9167715B600864C04 /* Products */;
-					ProjectRef = 87EC52D8167715B600864C04 /* kxmovie.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				8780438816413D4100B2D162 /* kxtorrent */,
@@ -938,23 +874,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		87EC52E2167715B600864C04 /* KxMovieExample.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = KxMovieExample.app;
-			remoteRef = 87EC52E1167715B600864C04 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		87EC52E4167715B600864C04 /* libkxmovie.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libkxmovie.a;
-			remoteRef = 87EC52E3167715B600864C04 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8780439416413D4100B2D162 /* Resources */ = {
@@ -1013,8 +932,6 @@
 				87EC7211166F084C00CB7F10 /* Default@2x.png in Resources */,
 				87EAD7F816438AD0006048F8 /* Default-568h@2x.png in Resources */,
 				87EC7229166F20D900CB7F10 /* firstrun in Resources */,
-				87EC52D51677157F00864C04 /* SVProgressHUD.bundle in Resources */,
-				87EC52EC1677191C00864C04 /* kxmovie.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1029,6 +946,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2EA2349AC52A58A5BA8F5F7A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwarmLoader/Pods-SwarmLoader-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwarmLoader/Pods-SwarmLoader-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8780439516413D4100B2D162 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1055,6 +994,94 @@
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
 		};
+		A85A495B3D7546DDAD57264B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwarmLoaderTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B23BC8C2E1AB7B3446F55F33 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwarmLoader-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F42F00871DB36A8B23B04590 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kxtorrent-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDCE2103EA6585582E85DB34 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kxtorrentTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -1062,35 +1089,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AA7BD932AC0A2A7001A677F /* KxTuple2.m in Sources */,
+				2AA7BD8F2AC0A2A7001A677F /* NSString+Kolyvan.m in Sources */,
 				878043AF16413D6300B2D162 /* bencode.m in Sources */,
 				87871E5F1642323600ECDBD5 /* TorrentMetaInfo.m in Sources */,
+				2AA7BD982AC0A2A7001A677F /* NSData+Kolyvan.m in Sources */,
+				2AA7BD8D2AC0A2A7001A677F /* NSString+HTML.m in Sources */,
+				2AA7BD902AC0A2A7001A677F /* NSDictionary+Kolyvan.m in Sources */,
 				87871E67164235D700ECDBD5 /* TorrentUtils.m in Sources */,
 				87871E6B16423CCE00ECDBD5 /* TorrentErrors.m in Sources */,
 				870B0FA6164257B1005087E5 /* TorrentTracker.m in Sources */,
 				871042C11642691E0086607C /* TorrentServer.m in Sources */,
+				2AA7BD912AC0A2A7001A677F /* KxCast.m in Sources */,
+				2AA7BD8B2AC0A2A7001A677F /* KxConsole.m in Sources */,
+				2AA7BD8C2AC0A2A7001A677F /* NSData+ZLIB.m in Sources */,
+				2AA7BD8E2AC0A2A7001A677F /* KxBase64.m in Sources */,
 				87EAD7DB16437FDE006048F8 /* TorrentPeer.m in Sources */,
 				87F7CA5E1643AF3B00FA9B30 /* TorrentFiles.m in Sources */,
+				2AA7BD942AC0A2A7001A677F /* NSDate+Kolyvan.m in Sources */,
 				87F7CA641643B03A00FA9B30 /* TorrentPiece.m in Sources */,
+				2AA7BD962AC0A2A7001A677F /* NSFileHandle+Kolyvan.m in Sources */,
 				87F33699164A250600292983 /* TorrentMeter.m in Sources */,
+				2AA7BD972AC0A2A7001A677F /* KxBitArray.m in Sources */,
+				2AA7BD952AC0A2A7001A677F /* NSArray+Kolyvan.m in Sources */,
 				87F3369D164A28A700292983 /* TorrentClient.m in Sources */,
 				87F336A0164A2B0800292983 /* TorrentPeerWire.m in Sources */,
+				2AA7BD922AC0A2A7001A677F /* KxUtils.m in Sources */,
 				870064AA1664E684006D4F3E /* TorrentSettings.m in Sources */,
-				87EC52B91677154100864C04 /* KxBitArray.m in Sources */,
-				87EC52BB1677154100864C04 /* KxCast.m in Sources */,
-				87EC52BD1677154100864C04 /* KxConsole.m in Sources */,
-				87EC52BF1677154100864C04 /* KxList.m in Sources */,
-				87EC52C11677154100864C04 /* KxTuple2.m in Sources */,
-				87EC52C31677154100864C04 /* KxUtils.m in Sources */,
-				87EC52C51677154100864C04 /* NSArray+Kolyvan.m in Sources */,
-				87EC52C71677154100864C04 /* NSData+Kolyvan.m in Sources */,
-				87EC52C91677154100864C04 /* NSDate+Kolyvan.m in Sources */,
-				87EC52CB1677154100864C04 /* NSDictionary+Kolyvan.m in Sources */,
-				87EC52CD1677154100864C04 /* NSObject+Kolyvan.m in Sources */,
-				87EC52CF1677154100864C04 /* NSString+Kolyvan.m in Sources */,
-				87EC52EF16771CB500864C04 /* DDLog.m in Sources */,
-				87EC52F016771CBA00864C04 /* DDTTYLogger.m in Sources */,
-				87EC52F116771CBC00864C04 /* DDASLLogger.m in Sources */,
-				87EC52F216771CBE00864C04 /* DDAbstractDatabaseLogger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1099,8 +1124,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				878043A616413D4100B2D162 /* kxtorrentTests.m in Sources */,
-				87EC52F316771CE500864C04 /* NSArray+Kolyvan.m in Sources */,
-				87EC52F416771CF600864C04 /* NSData+Kolyvan.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1133,24 +1156,6 @@
 				871336381669D2290040B800 /* BlacklistViewController.m in Sources */,
 				873125C8166B320C00D2E19D /* ProbePort.m in Sources */,
 				87EC7220166F161B00CB7F10 /* TextViewController.m in Sources */,
-				87EC528A1677146A00864C04 /* GCDAsyncSocket.m in Sources */,
-				87EC5295167714AC00864C04 /* DDAbstractDatabaseLogger.m in Sources */,
-				87EC5296167714AC00864C04 /* DDASLLogger.m in Sources */,
-				87EC5297167714AC00864C04 /* DDLog.m in Sources */,
-				87EC5298167714AC00864C04 /* DDTTYLogger.m in Sources */,
-				87EC52BA1677154100864C04 /* KxBitArray.m in Sources */,
-				87EC52BC1677154100864C04 /* KxCast.m in Sources */,
-				87EC52BE1677154100864C04 /* KxConsole.m in Sources */,
-				87EC52C01677154100864C04 /* KxList.m in Sources */,
-				87EC52C21677154100864C04 /* KxTuple2.m in Sources */,
-				87EC52C41677154100864C04 /* KxUtils.m in Sources */,
-				87EC52C61677154100864C04 /* NSArray+Kolyvan.m in Sources */,
-				87EC52C81677154100864C04 /* NSData+Kolyvan.m in Sources */,
-				87EC52CA1677154100864C04 /* NSDate+Kolyvan.m in Sources */,
-				87EC52CC1677154100864C04 /* NSDictionary+Kolyvan.m in Sources */,
-				87EC52CE1677154100864C04 /* NSObject+Kolyvan.m in Sources */,
-				87EC52D01677154100864C04 /* NSString+Kolyvan.m in Sources */,
-				87EC52D71677157F00864C04 /* SVProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1175,11 +1180,6 @@
 			isa = PBXTargetDependency;
 			target = 87EAD7E016438AD0006048F8 /* SwarmLoader */;
 			targetProxy = 87EAD80816438AD0006048F8 /* PBXContainerItemProxy */;
-		};
-		87EC52E6167715DB00864C04 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = kxmovie;
-			targetProxy = 87EC52E5167715DB00864C04 /* PBXContainerItemProxy */;
 		};
 		87F7CA251643935F00FA9B30 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1218,6 +1218,7 @@
 /* Begin XCBuildConfiguration section */
 		878043A816413D4100B2D162 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0BB1B9DCC1712215A3601D9 /* Pods-kxtorrent.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -1241,7 +1242,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1252,6 +1253,7 @@
 		};
 		878043A916413D4100B2D162 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C7A050DE3604A0C62FAC804 /* Pods-kxtorrent.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -1268,7 +1270,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -1279,6 +1281,7 @@
 		};
 		878043AB16413D4100B2D162 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C43B17BFE4AF181E53E1E811 /* Pods-kxtorrentTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -1305,7 +1308,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "kxtorrentTests/kxtorrentTests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -1315,6 +1318,7 @@
 		};
 		878043AC16413D4100B2D162 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50959863F61FBECD6A79FD09 /* Pods-kxtorrentTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -1334,7 +1338,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "kxtorrentTests/kxtorrentTests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -1344,6 +1348,7 @@
 		};
 		87EAD81416438AD0006048F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AD35EAC53A3115C226793C0 /* Pods-SwarmLoader.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -1351,8 +1356,10 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 8WGT7VBHM9;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
@@ -1371,10 +1378,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "SwarmLoader/SwarmLoader-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1382,6 +1390,7 @@
 		};
 		87EAD81516438AD0006048F8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 876CF045E80308D1F2CB04B1 /* Pods-SwarmLoader.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -1389,8 +1398,10 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = 8WGT7VBHM9;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
@@ -1402,11 +1413,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "SwarmLoader/SwarmLoader-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
@@ -1415,6 +1427,7 @@
 		};
 		87EAD81716438AD0006048F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E06C2732D42A17D47923670 /* Pods-SwarmLoaderTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SwarmLoader.app/SwarmLoader";
@@ -1442,7 +1455,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "SwarmLoaderTests/SwarmLoaderTests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -1453,6 +1466,7 @@
 		};
 		87EAD81816438AD0006048F8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AC9039115DFE7798DA4E998 /* Pods-SwarmLoaderTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SwarmLoader.app/SwarmLoader";
@@ -1473,7 +1487,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "SwarmLoaderTests/SwarmLoaderTests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -1485,11 +1499,13 @@
 		87EC723E166F37AE00CB7F10 /* AdHoc */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 			};
 			name = AdHoc;
 		};
 		87EC723F166F37AE00CB7F10 /* AdHoc */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80493A47E7D5DCEA8F26F96B /* Pods-kxtorrent.adhoc.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -1506,7 +1522,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -1517,6 +1533,7 @@
 		};
 		87EC7240166F37AE00CB7F10 /* AdHoc */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCF71B9118C4114B62DA95E5 /* Pods-kxtorrentTests.adhoc.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -1536,7 +1553,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "kxtorrentTests/kxtorrentTests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -1546,6 +1563,7 @@
 		};
 		87EC7241166F37AE00CB7F10 /* AdHoc */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41058D4504F6B142C1A2D9B9 /* Pods-SwarmLoader.adhoc.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -1553,8 +1571,10 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Konstantin Bukreev";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = 8WGT7VBHM9;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
@@ -1566,11 +1586,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "SwarmLoader/SwarmLoader-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "63B4F545-6340-4699-8DB0-FFB973761669";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
@@ -1579,6 +1600,7 @@
 		};
 		87EC7242166F37AE00CB7F10 /* AdHoc */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F07D44355ECCF1A1CEE8BD1 /* Pods-SwarmLoaderTests.adhoc.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SwarmLoader.app/SwarmLoader";
@@ -1599,7 +1621,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "SwarmLoaderTests/SwarmLoaderTests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -1611,12 +1633,14 @@
 		87FFE8D41640E88F00E18169 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 			};
 			name = Debug;
 		};
 		87FFE8D51640E88F00E18169 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 			};
 			name = Release;
 		};

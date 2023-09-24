@@ -23,7 +23,7 @@
 #import "NSDate+Kolyvan.h"
 #import "NSArray+Kolyvan.h"
 #import "NSString+Kolyvan.h"
-#import "GCDAsyncSocket.h"
+#import <CocoaAsyncSocket/GCDAsyncSocket.h>
 #import "DDLog.h"
 
 #define SCHEDULE_UPLOAD_INTERVAL 10.0
@@ -234,7 +234,7 @@ static NSMutableArray * collectPeerIfDownloading(NSMutableArray *result,
     
     [_torrentTracker stop];
     
-    if (_peers.nonEmpty) {
+    if (_peers.count > 0) {
         
         DDLogVerbose(@"closing peers %@", self);
         
@@ -266,7 +266,7 @@ static NSMutableArray * collectPeerIfDownloading(NSMutableArray *result,
         [self updateTracker];
         
         NSArray * peers = [self activePeers];
-        if (peers.nonEmpty) {
+        if (peers.count > 0) {
             
             TorrentPeerWireDirty flag = TorrentPeerWireDirtyNone;
             for (TorrentPeer *peer in peers)
@@ -379,12 +379,12 @@ static NSMutableArray * collectPeerIfDownloading(NSMutableArray *result,
 - (NSArray *) swarmPeers
 {
     NSMutableArray *ma = [NSMutableArray arrayWithCapacity:[self swarmPeersCount]];
-    [ma appendAll:_peers];
-    [ma appendAll:_idlePeers];
-    [ma appendAll: _garbagedPeers];
+    [ma addObjectsFromArray:_peers];
+    [ma addObjectsFromArray:_idlePeers];
+    [ma addObjectsFromArray: _garbagedPeers];
     for (TorrentPeer *peer in _peers)
         if (peer.wire.peerExchange)
-            [ma appendAll: peer.wire.knownPeers];
+            [ma addObjectsFromArray: peer.wire.knownPeers];
     return ma;
 }
 
@@ -463,7 +463,7 @@ static NSMutableArray * collectPeerIfDownloading(NSMutableArray *result,
         return [self canAddPeer: p checkAll:YES];
     }];
     
-    if (peers.nonEmpty) {
+    if (peers.count > 0) {
         
         DDLogVerbose(@"add peers: %@", peers);
         [_idlePeers addObjectsFromArray:peers];
@@ -472,7 +472,7 @@ static NSMutableArray * collectPeerIfDownloading(NSMutableArray *result,
 
 - (void) connectPeers
 {
-    if (_idlePeers.nonEmpty) {
+    if (_idlePeers.count > 0) {
         
         if (_state != TorrentClientStateSeeding &&
             _peers.count < TorrentSettings.minActivePeers) {
@@ -482,7 +482,7 @@ static NSMutableArray * collectPeerIfDownloading(NSMutableArray *result,
             
             [_idlePeers removeObjectsInRange:NSMakeRange(0, num)];
             
-            if (_peers.isEmpty)
+            if (_peers.count == 0)
                 self.state = TorrentClientStateConnecting;
             
             for (TorrentPeer *peer in tmp)
@@ -502,7 +502,7 @@ static NSMutableArray * collectPeerIfDownloading(NSMutableArray *result,
         
     } else if (_state != TorrentClientStateSeeding &&
                _state != TorrentClientStateSearching &&
-               _peers.isEmpty ) {
+               _peers.count == 0 ) {
         
         DDLogVerbose(@"searching ...");        
         self.state = TorrentClientStateSearching;
@@ -905,7 +905,7 @@ endSchedule:
                 
                 NSArray *blocks = wire.downloadedBlocks;
                 
-                if (blocks.nonEmpty) {
+                if (blocks.count > 0) {
                     
                     if (!toWrite)
                         toWrite = [NSMutableArray array];
@@ -925,7 +925,7 @@ endSchedule:
             }
         }
         
-        if (toWrite.nonEmpty) {
+        if (toWrite.count > 0) {
             
             [_writingBlocks addObjectsFromArray:toWrite];
             for (TorrentBlock *block in toWrite) {
@@ -953,7 +953,7 @@ endSchedule:
             
             NSArray *blocks = wire.requestBlocks;
             
-            if (blocks.nonEmpty) {
+            if (blocks.count > 0) {
                 
                 if (!toRead)
                     toRead = [NSMutableArray array];
@@ -969,7 +969,7 @@ endSchedule:
         }
     }
     
-    if (toRead.nonEmpty) {
+    if (toRead.count > 0) {
         
         [_readingBlocks addObjectsFromArray:toRead];
         for (TorrentBlock *block in toRead)
@@ -1021,7 +1021,7 @@ endSchedule:
 
 - (void) garbagePeers
 {
-    if (!_garbagedPeers.nonEmpty)
+    if (!_garbagedPeers.count > 0)
         return;
     
     NSMutableArray *toIdle;
@@ -1192,7 +1192,7 @@ endSchedule:
         }
     }
     
-    if (added.nonEmpty || dropped.nonEmpty) {
+    if (added.count > 0 || dropped.count > 0) {
     
        for (TorrentPeer *peer in _peers)
             if (peer.wire.peerExchange)
@@ -1436,7 +1436,7 @@ endSchedule:
                         
                         if (!wire.chokedByPeer &&
                             wire.interestedInPeer &&
-                            wire.incomingBlocks.isEmpty) {
+                            wire.incomingBlocks.count == 0) {
                             
                             [self toggleInterested: wire];
                         }

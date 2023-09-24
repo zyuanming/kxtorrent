@@ -126,7 +126,7 @@ enum {
         if (AboutViewSectionAboutCopyrigth == indexPath.row) {
         
             cell = [self mkCell:@"TextCell" withStyle:UITableViewCellStyleSubtitle];
-            cell.textLabel.text = [dict get:@"NSHumanReadableCopyright" orElse:@"?"];
+            cell.textLabel.text = dict[@"NSHumanReadableCopyright"];
             cell.detailTextLabel.text = @"Copyright (c) 2012";
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
 
@@ -134,7 +134,7 @@ enum {
             
             cell = [self mkCell:@"Cell" withStyle:UITableViewCellStyleValue1];
             cell.textLabel.text = @"Version";
-            cell.detailTextLabel.text = [dict get:@"CFBundleShortVersionString" orElse:@"?"];
+            cell.detailTextLabel.text = dict[@"CFBundleShortVersionString"];
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
             
         } else if (AboutViewSectionAboutLink == indexPath.row) {

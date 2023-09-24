@@ -113,7 +113,7 @@ extern NSString * IPv4AsString(UInt32 ip)
     char buf[INET_ADDRSTRLEN] = {0};
     if (!inet_ntop(AF_INET, &ip, buf, INET_ADDRSTRLEN)) {
         
-        DDLogCWarn(@"fail convert ipv4 '%lu' to string", ip);
+        DDLogWarn(@"fail convert ipv4 '%lu' to string", ip);
         return @"";
     }
     return [NSString stringWithCString:buf encoding:NSASCIIStringEncoding];
@@ -124,7 +124,7 @@ extern UInt32 stringAsIPv4(NSString *s)
     UInt32 addr = 0;
     if (inet_pton(AF_INET, [s cStringUsingEncoding:NSASCIIStringEncoding], &addr) <= 0) {
         
-        DDLogCWarn(@"fail convert string '%@' to ipv4", s);
+        DDLogWarn(@"fail convert string '%@' to ipv4", s);
     }
     return addr;
 }
@@ -137,7 +137,7 @@ extern UInt32 dataAsIPv4(NSData *data)
         return sockaddr->sin_addr.s_addr;
     }
     
-    DDLogCWarn(@"invalid size for sockaddr_in: %d", data.length);
+    DDLogWarn(@"invalid size for sockaddr_in: %d", data.length);
     return 0;
 }
 
@@ -209,7 +209,7 @@ void saveCachedData(NSString *kind, NSString *name, NSData *data)
                             attributes:nil
                                  error:&error]) {
             
-            DDLogCWarn(@"unable mkdir %@, %@",
+            DDLogWarn(@"unable mkdir %@, %@",
                       folder,
                       KxUtils.completeErrorMessage(error));
             return;
@@ -224,12 +224,12 @@ void saveCachedData(NSString *kind, NSString *name, NSData *data)
     
     if (![data writeToFile:path options:0 error:&error]) {
         
-        DDLogCWarn(@"unable write to file %@, %@",
+        DDLogWarn(@"unable write to file %@, %@",
                   path,
                   KxUtils.completeErrorMessage(error));
     }
     
-    DDLogCVerbose(@"save cached data %@/%@", kind, name);
+    DDLogInfo(@"save cached data %@/%@", kind, name);
 }
 
 NSData *loadCachedData(NSString *kind, NSString *name, NSDate *timestamp)
@@ -244,7 +244,7 @@ NSData *loadCachedData(NSString *kind, NSString *name, NSDate *timestamp)
     
     NSDictionary *dict = [fm attributesOfItemAtPath:path error:&error];
     if (!dict) {
-        DDLogCWarn(@"unable get attributes of %@, %@",
+        DDLogWarn(@"unable get attributes of %@, %@",
                    folder,
                    KxUtils.completeErrorMessage(error));
         return nil;
@@ -254,7 +254,7 @@ NSData *loadCachedData(NSString *kind, NSString *name, NSDate *timestamp)
     
         NSDate *date = [dict valueForKey:NSFileModificationDate];
         if (!dict) {
-            DDLogCWarn(@"unable get file modification date of %@, %@",
+            DDLogWarn(@"unable get file modification date of %@, %@",
                        folder,
                        KxUtils.completeErrorMessage(error));
             return nil;
@@ -263,7 +263,7 @@ NSData *loadCachedData(NSString *kind, NSString *name, NSDate *timestamp)
         if ([date isLess:timestamp]) {
             
             [fm removeItemAtPath:path error:nil];
-            DDLogCWarn(@"obsolete cached date %@/%@", kind, name);
+            DDLogWarn(@"obsolete cached date %@/%@", kind, name);
             return nil;
         }
     }
@@ -271,11 +271,11 @@ NSData *loadCachedData(NSString *kind, NSString *name, NSDate *timestamp)
     NSData *data = [NSData dataWithContentsOfFile:path options:0  error:&error];
     if (data) {
     
-        DDLogCVerbose(@"load cached data %@/%@", kind, name);
+        DDLogInfo(@"load cached data %@/%@", kind, name);
         
     } else {
         
-        DDLogCWarn(@"unable load cached data %@/%@, %@",
+        DDLogWarn(@"unable load cached data %@/%@, %@",
                   kind, name,
                   KxUtils.completeErrorMessage(error));
     }
@@ -292,7 +292,7 @@ void cleanupCachedData(NSString *kind, NSString *name)
         NSError *error;
         if (![fm removeItemAtPath:path error:&error]) {
             
-            DDLogCWarn(@"unable cleanup cached pieces %@/%@, %@",
+            DDLogWarn(@"unable cleanup cached pieces %@/%@, %@",
                       kind, name,
                       KxUtils.completeErrorMessage(error));
         }

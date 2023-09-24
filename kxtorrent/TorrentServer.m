@@ -130,7 +130,6 @@ static int ddLogLevel = LOG_LEVEL_VERBOSE;
     [self close];
     
     if (_dispatchQueue) {
-        dispatch_release(_dispatchQueue);
         _dispatchQueue = nil;
     }
 }
@@ -201,7 +200,7 @@ static int ddLogLevel = LOG_LEVEL_VERBOSE;
     
         NSArray *peers = [self activePeers];
         
-        if (peers.nonEmpty) {
+        if (peers.count > 0) {
             
             if (downLimit > 0)
                 [self bandwidthRecv:peers limit: downLimit];
@@ -321,7 +320,7 @@ static int ddLogLevel = LOG_LEVEL_VERBOSE;
 
 - (void) addClientImpl:(TorrentClient *)client
 {
-    if (_clients.isEmpty)
+    if (_clients.count == 0)
         [self start];
     
     if (![_clients containsObject:client]) {
@@ -336,7 +335,7 @@ static int ddLogLevel = LOG_LEVEL_VERBOSE;
     [_clients removeObject:client];
     [client close];
     
-    if (_clients.isEmpty)
+    if (_clients.count == 0)
         [self close];
 }
 
@@ -360,7 +359,6 @@ static int ddLogLevel = LOG_LEVEL_VERBOSE;
     if (_timer) {
         
         dispatch_source_cancel(_timer);
-        dispatch_release(_timer);
         _timer = nil;
     }
     

@@ -435,7 +435,7 @@ static NSString * buildAnnounceRequestQuery(TorrentTracker *tracker,
         }
             
         case TorrentTrackerRequestStateError:
-            return KxUtils.format(@"error: %@", _lastError.localizedDescription);
+            return [NSString stringWithFormat:@"error: %@", _lastError.localizedDescription];
     }
 }
 

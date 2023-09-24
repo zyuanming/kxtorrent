@@ -162,7 +162,7 @@
                 if (!path.count || !length || !length.longLongValue)
                     return nil;
                 
-                TorrentFileInfo *fi = [[TorrentFileInfo alloc] initFromPath:[path mkString:@"/"]
+                TorrentFileInfo *fi = [[TorrentFileInfo alloc] initFromPath:[path componentsJoinedByString:@"/"]
                                                                      length:length.longLongValue
                                                                         md5:md5];
                 [ma addObject:fi];                
@@ -200,7 +200,7 @@
             _creationDate = [NSDate dateWithTimeIntervalSince1970: n.longLongValue];
                 
         a = [dict arrayForKey:@"announce-list"];
-        if (a.nonEmpty) {
+        if (a.count > 0) {
             
             //NSLog(@"trackers: %@", a);
             

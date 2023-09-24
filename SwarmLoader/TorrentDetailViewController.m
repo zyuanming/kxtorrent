@@ -463,7 +463,7 @@ enum {
         } else if (TorrentDetailSectionMetaInfoComment == indexPath.row) {
             
             cell = [self mkCell: @"TextCell" withStyle:UITableViewCellStyleDefault];
-            const BOOL hasComment = metainfo.comment.nonEmpty;
+            const BOOL hasComment = metainfo.comment.length > 0;
             cell.textLabel.text = hasComment ? metainfo.comment : @"No comment";
             cell.textLabel.textColor = hasComment ? theme.textColor : theme.grayedTextColor;
             cell.textLabel.numberOfLines = 2;
@@ -472,8 +472,8 @@ enum {
             
             cell = [self mkCell: @"DisclosureCell" withStyle:UITableViewCellStyleDefault];
             
-            NSString *publisher = metainfo.publisher.nonEmpty ? metainfo.publisher : metainfo.publisherUrl.host;
-            const BOOL hasPublisher = publisher.nonEmpty;
+            NSString *publisher = metainfo.publisher.length > 0 ? metainfo.publisher : metainfo.publisherUrl.host;
+            const BOOL hasPublisher = publisher.length > 0;
             cell.textLabel.text = hasPublisher ? publisher : @"Unknown publisher";
             cell.textLabel.textColor = hasPublisher ? theme.textColor : theme.grayedTextColor;
             cell.textLabel.numberOfLines = 2;
@@ -482,22 +482,22 @@ enum {
         } else if (TorrentDetailSectionMetaInfoCreated == indexPath.row) {
             
             cell = [self mkCell: @"SubtitleCell" withStyle:UITableViewCellStyleSubtitle];
-            cell.textLabel.text = metainfo.createdBy.nonEmpty ? metainfo.createdBy : @"Noname creator";;
+            cell.textLabel.text = metainfo.createdBy.length > 0 ? metainfo.createdBy : @"Noname creator";;
             cell.detailTextLabel.text = [metainfo.creationDate iso8601Formatted];
             
         } else if (TorrentDetailSectionMetaInfoFiles == indexPath.row) {
             
             cell = [self mkCell: @"TextCell" withStyle:UITableViewCellStyleSubtitle];
-            cell.textLabel.text = KxUtils.format(@"%ld files of %@",
-                                                 metainfo.files.count,
-                                                 scaleSizeToStringWithUnit(metainfo.totalLength));
+            cell.textLabel.text = [NSString stringWithFormat:@"%ld files of %@",
+            metainfo.files.count,
+                                   scaleSizeToStringWithUnit(metainfo.totalLength)];
             
         } else if (TorrentDetailSectionMetaInfoPieces == indexPath.row) {
             
             cell = [self mkCell: @"TextCell" withStyle:UITableViewCellStyleSubtitle];
-            cell.textLabel.text = KxUtils.format(@"%ld pieces, %@ size",
-                                                 metainfo.pieces.count,
-                                                 scaleSizeToStringWithUnit(metainfo.pieceLength));
+            cell.textLabel.text = [NSString stringWithFormat:@"%ld pieces, %@ size",
+            metainfo.pieces.count,
+                                   scaleSizeToStringWithUnit(metainfo.pieceLength)];
         }
         
         cell.selectionStyle = UITableViewCellSelectionStyleNone;    
@@ -608,7 +608,7 @@ enum {
             
             TorrentFile *tf = _client.files.files[indexPath.row];
             cell = [self mkCell: @"FileCell" withStyle:UITableViewCellStyleSubtitle];
-            cell.textLabel.text = tf.info.path.nonEmpty ? tf.info.path : metainfo.name;
+            cell.textLabel.text = tf.info.path.length > 0 ? tf.info.path : metainfo.name;
             cell.textLabel.lineBreakMode = UILineBreakModeMiddleTruncation;
             
             UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];

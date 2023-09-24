@@ -22,7 +22,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import "AppDelegate.h"
 #import "ImageViewController.h"
-#import "KxMovieViewController.h"
+//#import "KxMovieViewController.h"
 #import "TextViewController.h"
 
 typedef enum {
@@ -258,7 +258,7 @@ static FileDescType fileDescTypeFromFileExtension(NSString *path)
     
     for (NSString *filename in contents) {
         
-        if (filename.nonEmpty &&
+        if (filename.length > 0 &&
             filename.first != '.') {
             
             NSString *path = [folder stringByAppendingPathComponent:filename];
@@ -411,8 +411,8 @@ forRowAtIndexPath:(NSIndexPath *)indexPath
     } else if (fd.type == FileDescTypeVideo ||
                fd.type == FileDescTypeAudio) {
 
-        UIViewController *vc = [KxMovieViewController movieViewControllerWithContentPath:fd.path];
-        [self presentViewController:vc animated:YES completion:nil];
+//        UIViewController *vc = [KxMovieViewController movieViewControllerWithContentPath:fd.path];
+//        [self presentViewController:vc animated:YES completion:nil];
     
     } else if (fd.type == FileDescTypeImage) {
         

@@ -45,12 +45,12 @@
 
 - (void)logMessage:(DDLogMessage *)logMessage
 {
-    if (logMessage->logFlag == LOG_FLAG_ERROR ||
-        logMessage->logFlag == LOG_FLAG_WARN ||
-        logMessage->logFlag == LOG_FLAG_INFO // || logMessage->logFlag == LOG_FLAG_VERBOSE
+    if (logMessage.flag == LOG_FLAG_ERROR ||
+        logMessage.flag == LOG_FLAG_WARN ||
+        logMessage.flag == LOG_FLAG_INFO // || logMessage.flag == LOG_FLAG_VERBOSE
         )
     {
-        NSString *logMsg = logMessage->logMsg;
+        NSString *logMsg = logMessage.message;
         
         if (logMsg.length) {
             
@@ -63,10 +63,10 @@
                     [_messages removeObjectsInRange:NSMakeRange(0, 32)];
                 }
                 
-                if (logMessage->logFlag == LOG_FLAG_ERROR) {
+                if (logMessage.flag == LOG_FLAG_ERROR) {
                     
                     [[[UIAlertView alloc] initWithTitle:@"Error"
-                                                message:logMessage->logMsg
+                                                message:logMessage.message
                                                delegate:nil
                                       cancelButtonTitle:@"Ok"
                                       otherButtonTitles:nil] show];
@@ -99,7 +99,7 @@
 
 - (NSString *) origin
 {
-    NSString *s = [NSString stringWithCString: _message->file encoding:NSASCIIStringEncoding];
+    NSString *s = _message->_file;
     s = s.lastPathComponent;
     
     if ([@"TorrentPeer.m" isEqualToString: s])
@@ -126,8 +126,8 @@
 
 - (NSString *) function
 {
-    NSString *s = [NSString stringWithCString: _message->function encoding:NSASCIIStringEncoding];
-    return [NSString stringWithFormat:@"%@:%d", s, _message->lineNumber];
+    NSString *s = _message.function;
+    return [NSString stringWithFormat:@"%@:%d", s, _message.line];
 }
 
 + (CGFloat) heightForMessage:(DDLogMessage *) message
@@ -138,15 +138,15 @@
     
     H += [UIFont boldSystemFont14].lineHeight;
     //H += [UIFont systemFont12].lineHeight;
-    if (message->logFlag == LOG_FLAG_ERROR ||
-        message->logFlag == LOG_FLAG_WARN)
+    if (message.flag == LOG_FLAG_ERROR ||
+        message.flag == LOG_FLAG_WARN)
     {
         H += [UIFont systemFont12].lineHeight;
     }
     
     H += 3;
     
-    CGSize size = [message->logMsg sizeWithFont:[UIFont systemFont14]
+    CGSize size = [message.message sizeWithFont:[UIFont systemFont14]
                    constrainedToSize:CGSizeMake(W, 9999)
                        lineBreakMode:UILineBreakModeClip];
     
@@ -173,13 +173,13 @@
     
     // draw origin
     
-    if (_message->logFlag == LOG_FLAG_ERROR)
+    if (_message.flag == LOG_FLAG_ERROR)
         [[UIColor redColor] set];
-    else if (_message->logFlag == LOG_FLAG_WARN)
+    else if (_message.flag == LOG_FLAG_WARN)
         [[UIColor orangeColor] set];
-    else if (_message->logFlag == LOG_FLAG_INFO)
+    else if (_message.flag == LOG_FLAG_INFO)
         [[UIColor altBlueColor] set];
-    else if (_message->logFlag == LOG_FLAG_VERBOSE)
+    else if (_message.flag == LOG_FLAG_VERBOSE)
         [[UIColor darkTextColor] set];
     
     size = [self.origin drawInRect:CGRectMake(X + width, Y, W - width, lineHeight)
@@ -191,7 +191,7 @@
     
     [[UIColor grayColor] set];
     NSString *s = [NSString stringWithFormat:@"%d. %@",
-                   _number, _message->timestamp.shortRelativeFormatted];
+                   _number, _message.timestamp.shortRelativeFormatted];
     width = [s sizeWithFont:[UIFont systemFont12]
            constrainedToSize:CGSizeMake(W - size.width - width, lineHeight)
                lineBreakMode:UILineBreakModeClip].width;
@@ -202,8 +202,8 @@
     Y += size.height;
     H -= size.height;
     
-    if (_message->logFlag == LOG_FLAG_ERROR ||
-        _message->logFlag == LOG_FLAG_WARN)
+    if (_message.flag == LOG_FLAG_ERROR ||
+        _message.flag == LOG_FLAG_WARN)
     {
         [[UIColor lightGrayColor] set];
         size = [self.function drawInRect:CGRectMake(X + 2, Y, W - 2, [UIFont systemFont12].lineHeight)
@@ -219,12 +219,12 @@
     
     // draw message
     
-    if (_message->logFlag == LOG_FLAG_VERBOSE)
+    if (_message.flag == LOG_FLAG_VERBOSE)
         [[UIColor grayColor] set];
     else
         [[UIColor darkTextColor] set];
     
-    [_message->logMsg drawInRect:CGRectMake(X, Y, W, H)
+    [_message.message drawInRect:CGRectMake(X, Y, W, H)
                         withFont:[UIFont systemFont14]
                    lineBreakMode:UILineBreakModeClip];
 }

@@ -136,7 +136,7 @@ static int ddLogLevel = LOG_LEVEL_VERBOSE;
     NSDictionary *dict = [userDefaults objectForKey:@"torrentSettings"];
     if (dict.count > 0) {
         TorrentSettings.load(dict);
-        DDLogCInfo(@"load settings: %@", dict);
+        DDLogInfo(@"load settings: %@", dict);
     }
     
     // load blacklist
@@ -145,7 +145,7 @@ static int ddLogLevel = LOG_LEVEL_VERBOSE;
         NSArray *blacklist  = [NSKeyedUnarchiver unarchiveObjectWithFile:path];
         if (blacklist.count) {
             [TorrentSettings.blacklist() addObjectsFromArray:blacklist];
-            DDLogCInfo(@"load blacklist: %d", blacklist.count);
+            DDLogInfo(@"load blacklist: %d", blacklist.count);
         }
     }
     

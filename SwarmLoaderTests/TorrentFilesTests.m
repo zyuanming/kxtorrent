@@ -162,7 +162,7 @@
 
 - (void) sheduleRead
 {
-    if (_piecesToRead.isEmpty)
+    if (_piecesToRead.count == 0)
         return;
     
     NSUInteger n = rand() % _piecesToRead.count;
